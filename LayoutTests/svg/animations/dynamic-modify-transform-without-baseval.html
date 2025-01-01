@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Test for WK93063: This test passes if no assert is hit and PASS is printed. -->
+<svg id="root" xmlns="http://www.w3.org/2000/svg">
+    <rect id="rect">
+        <animateTransform attributeName="transform" dur="2s"/>
+    </rect>
+<script>
+    if (window.layoutTestController) {
+        layoutTestController.dumpAsText();
+        layoutTestController.waitUntilDone();
+    }
+
+    var rect = document.getElementById('rect');
+    setTimeout("changeTransform()", 1);
+
+    function changeTransform() {
+        rect.setAttribute("transform", "scale(1)");
+        document.getElementById("root").setCurrentTime(1);
+        document.write("This test passes if no assert is hit and PASS is printed: PASS.");
+        if (window.layoutTestController)
+            layoutTestController.notifyDone();
+    }
+</script>
+</svg>
+</html>

@@ -1,0 +1,45 @@
+layer at (0,0) size 800x600
+  RenderView at (0,0) size 800x600
+layer at (0,0) size 800x600
+  RenderBlock {HTML} at (0,0) size 800x600
+    RenderBody {BODY} at (8,8) size 784x584
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+      RenderBlock {DIV} at (0,0) size 784x0
+layer at (546,562) size 246x28
+  RenderBlock (positioned) {FONT} at (546,562) size 246x28
+    RenderText {#text} at (0,0) size 246x28
+      text run at (0,0) width 246: "RTL-Center-Aligned"
+layer at (575,522) size 217x28
+  RenderBlock (positioned) {FONT} at (575,522) size 217x28
+    RenderText {#text} at (0,0) size 217x28
+      text run at (0,0) width 217: "RTL-Left-Aligned"
+layer at (561,472) size 231x28
+  RenderBlock (positioned) {FONT} at (561,472) size 231x28
+    RenderText {#text} at (0,0) size 231x28
+      text run at (0,0) width 231: "RTL-Right-Aligned"
+layer at (594,422) size 198x28
+  RenderBlock (positioned) {FONT} at (594,422) size 198x28
+    RenderText {#text} at (0,0) size 198x28
+      text run at (0,0) width 198: "RTL-No-Aligned"
+layer at (8,372) size 246x28
+  RenderBlock (positioned) {FONT} at (8,372) size 246x28
+    RenderText {#text} at (0,0) size 246x28
+      text run at (0,0) width 246: "LTR-Center-Aligned"
+layer at (8,322) size 217x28
+  RenderBlock (positioned) {FONT} at (8,322) size 217x28
+    RenderText {#text} at (0,0) size 217x28
+      text run at (0,0) width 217: "LTR-Left-Aligned"
+layer at (8,272) size 231x28
+  RenderBlock (positioned) {FONT} at (8,272) size 231x28
+    RenderText {#text} at (0,0) size 231x28
+      text run at (0,0) width 231: "LTR-Right-Aligned"
+layer at (8,272) size 198x28
+  RenderBlock (positioned) {FONT} at (8,272) size 198x28
+    RenderText {#text} at (0,0) size 198x28
+      text run at (0,0) width 198: "LTR-No-Aligned"
