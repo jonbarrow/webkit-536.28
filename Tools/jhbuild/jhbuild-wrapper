@@ -86,7 +86,7 @@ def clone_jhbuild():
     if not os.path.exists(installation_prefix):
         os.makedirs(installation_prefix)
 
-    process = subprocess.Popen(['git', 'clone', 'git://git.gnome.org/jhbuild'], cwd=source_path)
+    process = subprocess.Popen(['git', 'clone', 'https://github.com/jonbarrow/jhbuild'], cwd=source_path)
     process.wait()
     if process.returncode != 0:
         raise Exception('jhbuild git clone failed with return code: %i' % process.returncode)
