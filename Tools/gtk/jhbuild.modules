@@ -68,15 +68,15 @@
 
   <autotools id="fonts"
              skip-autogen="true">
-    <branch module="downloads/mrobinson/webkitgtk-test-fonts/webkitgtk-test-fonts-0.0.2.tar.gz" version="0.0.2"
+    <branch module="user-attachments/files/18284549/webkitgtk-test-fonts-0.0.2.tar.gz" version="0.0.2"
             repo="github.com"
-            hash="sha256:e252dc1c0fe50e2b190b6caf5017930c05cae0cf8374bf92f0761fb4a4980e8b"
-            md5sum="249166fec4b3773c7255775642e4de52">
+            hash="sha256:b8d631bb8202538b8a447070915a4475064668cbf91a4bf6068c728bcfa33aae"
+            md5sum="f0ad3dc37bdd615994cbf0d9cc874909">
     </branch>
   </autotools>
 
   <tarball id="freetype6">
-    <source href="download.savannah.gnu.org/releases/freetype/freetype-2.4.2.tar.bz2" version="2.4.2"
+    <source href="download-mirror.savannah.gnu.org/releases/freetype/freetype-old/freetype-2.4.2.tar.bz2" version="2.4.2"
             hash="sha256:9a987aef8c50d9bcfdfdc9f012f8bd0de6095cc1a5524e62c1a037deb8dacbfe"
             md5sum="647ee8ed266f9a4117c8d0a4855b3d3e"/>
   </tarball>
