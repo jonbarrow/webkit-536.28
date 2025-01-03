@@ -29,8 +29,8 @@
       href="ftp://sourceware.org"/>
   <repository type="tarball" name="ftp.gnome.org"
       href="http://ftp.gnome.org"/>
-  <repository type="git" name="git.gnome.org"
-      href="git://git.gnome.org/"/>
+  <repository type="git" name="gitlab.gnome.org"
+      href="https://gitlab.gnome.org/"/>
   <repository type="tarball" name="gnu.org"
       href="http://ftp.gnu.org/"/>
   <repository type="tarball" name="cairographics.org"
