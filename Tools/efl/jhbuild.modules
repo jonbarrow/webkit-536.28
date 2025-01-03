@@ -26,8 +26,8 @@
       href="http://p11-glue.freedesktop.org"/>
   <repository type="tarball" name="ftp.gnome.org"
       href="http://ftp.gnome.org"/>
-  <repository type="git" name="gitlab.gnome.org"
-      href="https://gitlab.gnome.org/"/>
+  <repository type="git" name="github.com-git"
+      href="https://github.com/"/>
   <repository type="tarball" name="gnu.org"
       href="http://ftp.gnu.org/"/>
   <repository type="tarball" name="cairographics.org"
@@ -143,7 +143,7 @@
       <dep package="glib-networking"/>
     </dependencies>
     <branch module="GNOME/libsoup" version="2.38.1"
-            repo="github.com"
+            repo="github.com-git"
             tag="LIBSOUP_2_38_1"/>
   </autotools>
 
