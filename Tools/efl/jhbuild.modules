@@ -142,7 +142,7 @@
     <dependencies>
       <dep package="glib-networking"/>
     </dependencies>
-    <branch module="GNOME/libsoup" version="2.38.1"
+    <branch module="GNOME/libsoup.git" version="2.38.1"
             repo="gitlab.gnome.org"
             tag="LIBSOUP_2_38_1"/>
   </autotools>
