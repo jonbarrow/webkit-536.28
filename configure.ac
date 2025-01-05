@@ -1093,30 +1093,34 @@ AC_SUBST([G_IR_GENERATE])
 
 # determine the font backend
 AC_MSG_CHECKING([the font backend to use])
-AC_ARG_WITH(font_backend,
-            AC_HELP_STRING([--with-font-backend=@<:@freetype/pango@:>@],
-                           [Select font backend [default=freetype]]),
+AC_ARG_WITH([font_backend],
+            [AC_HELP_STRING([--with-font-backend=@<:@freetype/pango@:>@],
+                           [Select font backend [default=freetype]])],
             [],[with_font_backend="freetype"])
+AC_MSG_RESULT([$with_font_backend])
 
 case "$with_font_backend" in
+  freetype|pango)
+    # Check whether to enable CSS Exclusions
+    AC_MSG_CHECKING([whether to enable CSS Exclusions])
+    AC_ARG_ENABLE([css_exclusions],
+                  [AC_HELP_STRING([--enable-css-exclusions],
+                                  [enable support for CSS Exclusions [default=yes]])],
+                  [],[enable_css_exclusions="yes"])
+    AC_MSG_RESULT([$enable_css_exclusions])
 
-# check whether to enable CSS Exclusions support
-AC_MSG_CHECKING([whether to enable CSS Exclusions])
-AC_ARG_ENABLE(css_exclusions,
-              AC_HELP_STRING([--enable-css-exclusions],
-                             [enable support for CSS Exclusions [default=yes]]),
-              [],[enable_css_exclusions="yes"])
-AC_MSG_RESULT([$enable_css_exclusions])
+    # Check whether to enable CSS Regions
+    AC_MSG_CHECKING([whether to enable CSS Regions])
+    AC_ARG_ENABLE([css_regions],
+                  [AC_HELP_STRING([--enable-css-regions],
+                                  [enable support for CSS Regions [default=yes]])],
+                  [],[enable_css_regions="yes"])
+    AC_MSG_RESULT([$enable_css_regions])
+    ;;
 
-# check whether to enable CSS Regions support
-AC_MSG_CHECKING([whether to enable CSS Regions])
-AC_ARG_ENABLE(css_regions,
-              AC_HELP_STRING([--enable-css-regions],
-                             [enable support for CSS Regions [default=yes]]),
-              [],[enable_css_regions="yes"])
-AC_MSG_RESULT([$enable_css_regions])
-     freetype|pango) ;;
-     *) AC_MSG_ERROR([Invalid font backend: must be freetype or pango.]) ;;
+  *)
+    AC_MSG_ERROR([Invalid font backend: must be freetype or pango.])
+    ;;
 esac
 AC_MSG_RESULT([$with_font_backend])
 
